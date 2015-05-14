@@ -1,0 +1,6 @@
+@(dbStatus: String, config: com.typesafe.config.Config)
+
+
+DB_STATUS: @dbStatus  <br/>
+CURRENT_DATABASE: @config.getString("db.default.url") <br/>
+DB_VERSION: PostgreSQL
